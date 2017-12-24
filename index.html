@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A family site</title>
+    <script>    </script>
+    <script>
+    function newName() {
+        var name=document.getElementById("newName").value;
+        var oldName=document.getElementById("Fname").innerHTML;
+    //    alert("the name to modify is: "+ oldName);
+    if ( name != null && name != "" &&name != oldName) {
+            // alert("the name was modified to: "+ name);
+            document.getElementById("Fname").innerHTML= name;
+        };
+    };
+    </script>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+    <div id="title"><span id="Fname">Tugendhaft</span> Family WebSite</div>
+    <br/>
+    You may type a new name: <input type="text" name="newFname" id="newName" value="" onchange="newName()">
+    
+<div>
+    This family is one of the best family in the world!
+    You may disagree if you never met us, 
+    but see the <a href="familyList.html">member list</a> and you will understand.
+</div>
+</body>
+</html>

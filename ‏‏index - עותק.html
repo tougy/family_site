@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A family site</title>
+    <script>    </script>
+    <script>
+    function newName() {
+        var name=document.getElementById("newName").value;
+        var oldName=document.getElementById("Fname").innerHTML;
+    //    alert("the name to modify is: "+ oldName);
+    if ( name != null && name != "" &&name != oldName) {
+            // alert("the name was modified to: "+ name);
+            document.getElementById("Fname").innerHTML= name;
+        };
+    };
+/* function myFunction() {
+     var txt;
+     var person = prompt("Please enter a new  name:", "Tugendhaft");
+     if (person == null || person == "") {
+         person = "Tugendhaft";
+     } 
+     document.getElementById("Fname").innerHTML = person;
+     //document.write(person + " bye?"+ "<br />");
+ } */
+    </script>
+
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+    <div id="title"><span id="Fname">Tugendhaft</span> Family WebSite</div>
+    <br/>
+    You may type a new name: <input type="text" name="newFname" id="newName" value="" onchange="newName()">
+    <p>Modify the text in the input field, then click outside the field to fire the onchange event.</p>
+    
+    <!-- Enter some text: <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)"> -->
+    
+    
+    
+<div>
+    This family is one of the best family in the world!
+    You may disagree if you never met us, 
+    but see the <a href="familyList.html">member list</a> and you will understand.
+</div>
+ <!--    <button onclick="myFunction()">Try it</button>
+
+        <form action="/action_page.php">
+            <p>Please enter your name.</p>
+            First name: <input type="text" name="fname"><br>
+            Last name: <input type="text" name="lname"><br>
+            <input type="submit" value="Submit">
+          </form>
+ 
+ <h2>JavaScript Prompt</h2>
+ 
+ <button onclick="myFunction()">Try it</button>
+ 
+ <p id="demo"></p>
+ 
+ <script>
+    var fname = prompt("Please enter your name again.", "No Name");
+    sayHello(fname);
+    </script>
+ -->    
+</body>
+</html>
